@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcy</title> <style> body{ margin: 50px; background-color: aqua; 
+    }.result{
+        background-color: rgb(255, 255, 255);
+    }
+      
+</style>
+</head>
+<body>
+    
+    <form action=""><table style="width:500px; border: solid 1px;"><tr>
+667   <td> Enter your principal amount :</td><td> <input  placeholder="0"  class="inp" type="number" id="p" ></td></tr>
+  <tr> <td> Enter your interest rate :</td><td> <input  placeholder="0"  class="inp" type="number" id="i"></td></tr>
+    <tr><td> Enter time period in month:</td><td> <input  placeholder="0"  class="inp" type="number" id="t"></td> </tr>
+   <tr><td> <input type="button" onclick="calBy()" value="calculate">
+    <input type="reset" value="clear">
+</td>    
+    <td><p class="result">your SI is :<span id="result"></span> </p></td></tr>
+
+</table>
+
+</form>
+   <script>
+  
+
+    function calBy(){
+       num1=document.getElementById("p").value;
+       num2=document.getElementById("i").value;
+       num3=document.getElementById("t").value;
+        document.getElementById("result").innerHTML=num1*num2*num3/100; 
+    }
+   
+   </script>
+   
+</body>
+</html>
